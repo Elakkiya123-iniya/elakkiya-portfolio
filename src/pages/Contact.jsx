@@ -15,7 +15,7 @@ export default function Contact() {
       {/* 🌈 Top Border Line */}
       <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-yellow-400 via-amber-300 to-yellow-400 animate-gradient" />
 
-      {/* ✨ Soft Glow Circles */}
+      {/* ✨ Background Glow */}
       <div className="absolute top-10 left-16 w-56 h-56 bg-yellow-200/25 blur-3xl rounded-full hidden md:block"></div>
       <div className="absolute bottom-10 right-20 w-56 h-56 bg-yellow-300/25 blur-3xl rounded-full hidden md:block"></div>
 
@@ -41,30 +41,40 @@ export default function Contact() {
 
       {/* 📬 Contact Cards */}
       <div className="flex flex-col md:flex-row justify-center items-center gap-6 mb-10">
-        {/* Email */}
-        <motion.div
+        {/* ✉️ Email */}
+        <motion.a
+          href="mailto:kishore22oct@gmail.com"
           whileHover={{ scale: 1.06 }}
           transition={{ type: "spring", stiffness: 200 }}
-          className="bg-white/80 dark:bg-gray-800/70 backdrop-blur-md border border-yellow-200 dark:border-gray-700 rounded-xl shadow-lg p-6 w-72 hover:shadow-yellow-400/30 transition-all duration-300"
+          className="bg-white/80 dark:bg-gray-800/70 backdrop-blur-md border border-yellow-200 dark:border-gray-700 rounded-xl shadow-lg p-6 w-72 hover:shadow-yellow-400/30 transition-all duration-300 cursor-pointer no-underline"
         >
           <Mail className="mx-auto mb-2 text-yellow-500" size={26} />
-          <p className="text-sm text-gray-800 dark:text-yellow-400 font-semibold mb-1">Email</p>
-          <p className="text-gray-700 dark:text-gray-200 text-sm">kishore22oct@gmail.com</p>
-        </motion.div>
+          <p className="text-sm text-gray-800 dark:text-yellow-400 font-semibold mb-1">
+            Email
+          </p>
+          <p className="text-gray-700 dark:text-gray-200 text-sm underline">
+            kishore22oct@gmail.com
+          </p>
+        </motion.a>
 
-        {/* Phone */}
-        <motion.div
+        {/* 📞 Phone */}
+        <motion.a
+          href="tel:+916385127709"
           whileHover={{ scale: 1.06 }}
           transition={{ type: "spring", stiffness: 200 }}
-          className="bg-white/80 dark:bg-gray-800/70 backdrop-blur-md border border-yellow-200 dark:border-gray-700 rounded-xl shadow-lg p-6 w-72 hover:shadow-yellow-400/30 transition-all duration-300"
+          className="bg-white/80 dark:bg-gray-800/70 backdrop-blur-md border border-yellow-200 dark:border-gray-700 rounded-xl shadow-lg p-6 w-72 hover:shadow-yellow-400/30 transition-all duration-300 cursor-pointer no-underline"
         >
           <Phone className="mx-auto mb-2 text-yellow-500" size={26} />
-          <p className="text-sm text-gray-800 dark:text-yellow-400 font-semibold mb-1">Phone</p>
-          <p className="text-gray-700 dark:text-gray-200 text-sm">+91 63851 27709</p>
-        </motion.div>
+          <p className="text-sm text-gray-800 dark:text-yellow-400 font-semibold mb-1">
+            Phone
+          </p>
+          <p className="text-gray-700 dark:text-gray-200 text-sm underline">
+            +91 63851 27709
+          </p>
+        </motion.a>
       </div>
 
-      {/* 🔗 LinkedIn Button */}
+      {/* 🔗 LinkedIn */}
       <motion.a
         href="https://www.linkedin.com/in/kishore-k-0717542a1"
         target="_blank"
@@ -77,7 +87,7 @@ export default function Contact() {
         Connect on LinkedIn
       </motion.a>
 
-      {/* 🌟 Bottom Border Line */}
+      {/* 🌟 Bottom Line */}
       <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-300 animate-gradient" />
     </motion.section>
   );
