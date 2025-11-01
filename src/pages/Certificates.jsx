@@ -9,7 +9,7 @@ export default function Certificates() {
       org: "IBM SkillsBuild",
       link: "https://www.linkedin.com/posts/elakkiya-selvaraj-68969232b_ibm-generativeai-skillsbuild-activity-7370344834248773632-cCC0",
       desc: "Explored core concepts of AI models, prompt engineering, and real-world applications.",
-      date: "2024",
+      date: "2025",
       color: "from-green-400 to-emerald-300",
     },
     {
@@ -17,7 +17,7 @@ export default function Certificates() {
       org: "GUVI",
       link: "https://www.linkedin.com/posts/elakkiya-selvaraj-68969232b_chatgpt-ai-certification-activity-7370343331093962752-TmG7",
       desc: "Learned AI-assisted problem solving and conversational automation techniques.",
-      date: "2024",
+      date: "2025",
       color: "from-teal-400 to-green-300",
     },
     {
@@ -25,7 +25,7 @@ export default function Certificates() {
       org: "SAWIT.AI Learnathan",
       link: "https://www.linkedin.com/posts/elakkiya-selvaraj-68969232b_generativeai-ai-continuouslearning-activity-7370338987556777984-C4nB",
       desc: "Focused on ethical AI usage, model evaluation and responsible development practices.",
-      date: "2024",
+      date: "2025",
       color: "from-green-500 to-lime-300",
     },
     {
@@ -33,7 +33,7 @@ export default function Certificates() {
       org: "PrepInsta",
       link: "https://www.linkedin.com/posts/elakkiya-selvaraj-68969232b_github-certification-prepinsta-activity-7370330080398585856-b6-F",
       desc: "Completed Git, GitHub version control workflows and collaboration fundamentals.",
-      date: "2024",
+      date: "2025",
       color: "from-gray-700 to-gray-500",
     },
     {
@@ -41,7 +41,7 @@ export default function Certificates() {
       org: "NPTEL",
       link: "https://www.linkedin.com/posts/elakkiya-selvaraj-68969232b_excited-to-share-this-i-have-successfully-activity-7370323318958239744-l3O3",
       desc: "Gained practical experience with loops, functions, file handling & debugging.",
-      date: "2024",
+      date: "2025",
       color: "from-blue-400 to-cyan-300",
     },
     {
@@ -57,7 +57,7 @@ export default function Certificates() {
       org: "Simplilearn",
       link: "https://www.linkedin.com/posts/elakkiya-selvaraj-68969232b_excited-to-share-a-new-achievement-in-my-activity-7370319492201074689-zqHT",
       desc: "Covered virtualization, cloud architecture and distributed applications.",
-      date: "2024",
+      date: "2025",
       color: "from-indigo-400 to-violet-300",
     },
     {
@@ -65,7 +65,7 @@ export default function Certificates() {
       org: "Logix Company, Bangalore",
       link: "https://www.linkedin.com/posts/elakkiya-selvaraj-68969232b_internship-fullstackdevelopment-django-activity-7370328541005099009-4p5b",
       desc: "Developed authenticated web applications with database integration and UI design.",
-      date: "2024",
+      date: "2025",
       color: "from-green-600 to-green-400",
     },
     {
