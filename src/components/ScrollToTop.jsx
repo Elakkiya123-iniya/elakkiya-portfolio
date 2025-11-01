@@ -32,9 +32,9 @@ export default function ScrollToTop() {
         >
           <motion.button
             onClick={scrollToTop}
-            whileHover={{ scale: 1.15, rotate: 5 }}
+            whileHover={{ scale: 1.15 }}
             whileTap={{ scale: 0.9 }}
-            className="p-3 md:p-4 rounded-full bg-yellow-400 text-white scroll-glow shadow-lg hover:bg-yellow-500 dark:bg-yellow-500 dark:hover:bg-yellow-400 transition-all duration-300"
+            className="p-3 md:p-4 rounded-full bg-green-600 text-white shadow-lg hover:bg-green-700 active:scale-95 transition-all duration-300"
             title="Back to top"
           >
             <ArrowUp size={24} />

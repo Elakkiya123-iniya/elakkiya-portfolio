@@ -5,31 +5,36 @@ import { Briefcase } from "lucide-react";
 export default function Internship() {
   const internships = [
     {
-      title: "Data Science Intern — CODTECH IT SOLUTIONS",
-      duration: "Jan 25, 2025 – Mar 25, 2025",
-      desc: "Performed exploratory data analysis and built ML models for prediction and insights using real datasets. Gained practical experience in data preprocessing, visualization, and performance evaluation.",
-      tech: ["Python", "Pandas", "Matplotlib", "Scikit-learn"],
-      color: "from-blue-400 to-cyan-400",
+      title: "Data Analytics Intern — Make Visions Company",
+      duration: "2024",
+      desc: "Worked on real-world datasets to perform data cleaning, preprocessing, visualization and interpretation for business insights.",
+      projectDetails: [
+        "Analyzed raw datasets to identify data patterns and trends.",
+        "Performed data visualization to support decision-making insights.",
+        "Developed structured dashboards for clear representation of metrics.",
+      ],
+      tech: ["Python", "Pandas", "Matplotlib", "Data Visualization"],
+      color: "from-green-400 to-emerald-400",
     },
     {
-      title: "Full Stack Web Development Intern — Edu Tantr",
-      duration: "May 10, 2025 – Aug 10, 2025",
-      desc: "Worked with modern front-end and back-end technologies to build responsive web apps and contributed to real-time deployment practices.",
+      title: "Full Stack Web Development Intern — Logix Company, Bangalore",
+      duration: "2025",
+      desc: "Developed a full-stack web application with user authentication, database integration and responsive UI using Django.",
       projectDetails: [
-        "Developed a full-featured Food Delivery App named EatzUp with login, cart, order, and payment modules.",
-        "Integrated MongoDB Atlas for cloud database storage and optimized API responses.",
-        "Implemented JWT authentication, Axios integration, and PDF invoice generation.",
-        "Used Tailwind CSS and React for a modern, responsive, and animated UI."
+        "Built a complete Django web application with structured backend routing.",
+        "Integrated database models for dynamic content storage and retrieval.",
+        "Implemented authentication (Login/Signup) and secure session handling.",
+        "Designed front-end layouts ensuring responsiveness across devices.",
       ],
-      tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
-      color: "from-yellow-400 to-amber-400",
+      tech: ["Django", "Python", "HTML", "CSS", "GitHub"],
+      color: "from-green-300 to-lime-400",
     },
   ];
 
   return (
     <motion.section
       id="internship"
-      className="py-20 px-6 bg-gradient-to-b from-white to-yellow-50 dark:from-gray-900 dark:to-gray-950 text-center"
+      className="py-20 px-6 bg-gradient-to-b from-white to-green-50 dark:from-gray-900 dark:to-black text-center"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -42,8 +47,8 @@ export default function Internship() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
       >
-        <Briefcase className="inline-block mr-3 text-yellow-500" size={36} />
-        My Internships
+        <Briefcase className="inline-block mr-3 text-green-500" size={36} />
+        Internship Experience
       </motion.h2>
 
       {/* Internship Cards */}
@@ -59,7 +64,7 @@ export default function Internship() {
           >
             <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 h-full flex flex-col justify-between text-left">
               <div>
-                <h3 className="text-2xl font-semibold text-gray-800 dark:text-yellow-400 mb-2">
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-green-400 mb-2">
                   {p.title}
                 </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
@@ -83,7 +88,7 @@ export default function Internship() {
                 {p.tech.map((tech, tIndex) => (
                   <span
                     key={tIndex}
-                    className="bg-yellow-100 dark:bg-yellow-500/20 text-yellow-700 dark:text-yellow-300 px-3 py-1 rounded-full text-xs font-medium"
+                    className="bg-green-100 dark:bg-green-500/20 text-green-800 dark:text-green-300 px-3 py-1 rounded-full text-xs font-medium"
                   >
                     {tech}
                   </span>

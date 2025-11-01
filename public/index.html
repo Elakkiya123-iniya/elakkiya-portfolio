@@ -2,23 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+
     <!-- 🧩 Favicon / Logo -->
+    <!-- put logo.jpg (square) in public/assets/ -->
     <link rel="icon" type="image/jpg" href="%PUBLIC_URL%/assets/logo.jpg" />
 
     <!-- 🌐 Viewport and Theme -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <!-- Primary theme color (Green) -->
+    <meta name="theme-color" content="#2E7D32" />
 
-    <!-- 📝 SEO Meta -->
+    <!-- 📝 SEO Meta (tailored for Elakkiya) -->
+    <title>Elakkiya Selvaraj | Full Stack Developer</title>
     <meta
       name="description"
-      content="Kishore Kumar | Full Stack Developer Portfolio showcasing projects, internships, and achievements."
+      content="Elakkiya Selvaraj — Full Stack Developer. Portfolio showcasing projects, internships, skills (HTML, CSS, Python, Java basics) and contact details."
     />
     <meta
       name="keywords"
-      content="Kishore, Portfolio, Web Developer, Full Stack, React, JavaScript"
+      content="Elakkiya, Elakkiya Selvaraj, Full Stack Developer, Portfolio, HTML, CSS, Python, Java, GitHub, Internships"
     />
-    <meta name="author" content="Kishore Kumar" />
+    <meta name="author" content="Elakkiya Selvaraj" />
 
     <!-- 📱 Apple Touch Icon -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/assets/logo.jpg" />
@@ -26,8 +30,63 @@
     <!-- 🧾 PWA Manifest -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <!-- 🏷️ Website Title -->
-    <title>Kishore | Portfolio</title>
+    <!-- 🔗 Preload / Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 🧰 Main stylesheet (create public/assets/styles.css or serve from src) -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/styles.css" />
+
+    <!-- 🪧 Social cards / Open Graph -->
+    <meta property="og:title" content="Elakkiya Selvaraj | Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Elakkiya Selvaraj — Full Stack Developer. Projects, internships and contact information."
+    />
+    <!-- Use profile image placed at public/assets/profile.jpg -->
+    <meta property="og:image" content="%PUBLIC_URL%/assets/profile.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-deployed-site.example" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Elakkiya Selvaraj | Full Stack Developer" />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Elakkiya Selvaraj — Full Stack Developer. Projects, internships and contact information."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/assets/profile.jpg" />
+
+    <!-- 🧾 JSON-LD structured data (basic person profile) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Elakkiya Selvaraj",
+        "jobTitle": "Full Stack Developer",
+        "image": "%PUBLIC_URL%/assets/profile.jpg",
+        "sameAs": [
+          "https://www.linkedin.com/in/elakkiya-selvaraj-68969232b",
+          "https://github.com/Elakkiya123-iniya"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "J.N.N Institute of Engineering (Anna University)"
+        }
+      }
+    </script>
+
+    <!-- 📝 Helpful dev note (keeps dev aware) -->
+    <!--
+      Replace the following in public/assets/:
+      - logo.jpg       (favicon / brand mark)
+      - profile.jpg    (Elakkiya's cropped profile image)
+      - styles.css     (the main stylesheet or use src/index.css)
+      Update the og:url meta to your deployed site after hosting.
+    -->
   </head>
 
   <body>
@@ -35,10 +94,10 @@
     <div id="root"></div>
 
     <!--
-      💡 This HTML file is a template.
-      The build step will place the bundled scripts into the <body> tag.
-      To start development: npm start
-      To create a production build: npm run build
+      Build notes:
+      - Development: npm start
+      - Production build: npm run build
+      - After build, ensure public/assets/* files are included.
     -->
   </body>
 </html>

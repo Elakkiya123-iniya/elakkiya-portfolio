@@ -6,17 +6,17 @@ export default function Footer() {
   const socialLinks = [
     {
       icon: <Linkedin size={22} />,
-      href: "https://www.linkedin.com/in/kishore-k-0717542a1/",
+      href: "https://www.linkedin.com/in/elakkiya-selvaraj-68969232b/",
       label: "LinkedIn",
     },
     {
       icon: <Github size={22} />,
-      href: "https://github.com/Kishore22101",
+      href: "https://github.com/Elakkiya123-iniya",
       label: "GitHub",
     },
     {
       icon: <Mail size={22} />,
-      href: "mailto:kishore22oct@gmail.com",
+      href: "mailto:elakkiyainiya1@gmail.com",
       label: "Email",
     },
   ];
@@ -26,19 +26,19 @@ export default function Footer() {
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="relative bg-gradient-to-br from-black via-gray-900 to-black text-center py-14 mt-20 border-t border-yellow-500 overflow-hidden shadow-[0_-4px_30px_rgba(250,204,21,0.1)]"
+      className="relative bg-white text-center py-14 mt-20 border-t border-green-500 overflow-hidden"
     >
-      {/* 🌈 Glowing Yellow Gradient Border Top */}
-      <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-yellow-500 via-amber-400 to-yellow-500 animate-gradient" />
+      {/* 🌿 Soft Green Top Line */}
+      <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-green-600 to-green-400" />
 
-      {/* ✨ Floating Glow Orbs */}
-      <div className="absolute top-10 left-20 w-48 h-48 bg-yellow-400/10 blur-3xl rounded-full animate-pulse hidden md:block"></div>
-      <div className="absolute bottom-10 right-20 w-48 h-48 bg-yellow-500/10 blur-3xl rounded-full animate-pulse hidden md:block"></div>
+      {/* 🌿 Soft Glow */}
+      <div className="absolute top-10 left-10 w-40 h-40 bg-green-300/10 blur-3xl rounded-full"></div>
+      <div className="absolute bottom-10 right-10 w-40 h-40 bg-green-400/10 blur-3xl rounded-full"></div>
 
       {/* 🌍 Footer Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-6 text-yellow-400 tracking-wide drop-shadow-lg">
-          Join the Journey 🚀
+        <h2 className="text-3xl font-bold mb-6 text-green-700 tracking-wide">
+          Stay Connected 🌿
         </h2>
 
         {/* 🌐 Social Icons */}
@@ -50,35 +50,27 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               title={social.label}
-              whileHover={{ scale: 1.25, rotate: 5 }}
-              whileTap={{ scale: 0.95 }}
-              className="group p-3 rounded-full bg-yellow-400 text-black shadow-md transition-all duration-300 hover:shadow-yellow-400/50 hover:bg-yellow-500 ring-2 ring-transparent hover:ring-yellow-300"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              className="group p-3 rounded-full bg-green-600 text-white shadow-md transition-all duration-300 hover:bg-green-700 hover:shadow-green-400/50"
             >
-              <motion.div
-                whileHover={{
-                  rotate: 10,
-                  transition: { type: "spring", stiffness: 200 },
-                }}
-              >
-                {social.icon}
-              </motion.div>
+              {social.icon}
             </motion.a>
           ))}
         </div>
 
         {/* 📝 Footer Text */}
-        <p className="text-gray-400 text-sm mb-1">
+        <p className="text-gray-600 text-sm mb-1">
           © {new Date().getFullYear()}{" "}
-          <span className="text-yellow-400 font-semibold">Kishore Kumar</span> — All Rights Reserved.
+          <span className="text-green-700 font-semibold">Elakkiya Selvaraj</span> — All Rights Reserved.
         </p>
 
         <p className="text-xs text-gray-500 mt-1">
-          Built with ❤️ using{" "}
-          <span className="text-yellow-400">React</span> +{" "}
-          <span className="text-yellow-400">Tailwind CSS</span>
+          Built with 💚 using <span className="text-green-700">React</span> +{" "}
+          <span className="text-green-700">Tailwind CSS</span>
         </p>
 
-        {/* 💖 Signature */}
+        {/* ✨ Signature */}
         <motion.p
           className="mt-4 text-xs text-gray-500 italic"
           initial={{ opacity: 0 }}
@@ -86,7 +78,7 @@ export default function Footer() {
           transition={{ delay: 0.4, duration: 0.8 }}
         >
           Designed & Developed by{" "}
-          <span className="text-yellow-400 font-medium">Kishore Kumar</span> 👨‍💻
+          <span className="text-green-700 font-medium">Elakkiya Selvaraj</span> 🌱
         </motion.p>
       </div>
     </motion.footer>
